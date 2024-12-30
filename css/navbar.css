@@ -1,0 +1,54 @@
+
+.gauge-container {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    background-color: #f0f4f0;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gauge {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+        #2e7d32 0%,
+        #2e7d32 50%,
+        #e8e8e8 50%,
+        #e8e8e8 100%
+    );
+    position: absolute;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.needle {
+    width: 5px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(45deg); /* Initial angle */
+    transition: transform 0.5s ease-out;
+}
+
+.calories-label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.today-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+}

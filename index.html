@@ -1,0 +1,235 @@
+<?php include('save_meal.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../meal3/css/style.css">
+    <link rel="stylesheet" href="../meal3/css/navbar.css">
+    <link rel="stylesheet" href="../meal3/css/3dots.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../meal3/images/fimage.png">
+    <title>FITMEAL-PARTNER</title>
+</head>
+
+<body>
+<div class="overlay">
+    <div class="container ">
+        <div class="row">
+            <div class="nav1 col-6 col-sm-2 col-md-2 col-lg-2  ">
+                <img id="fimage" src="../meal3/images/fimage.png" width="20px">
+                <h6>FitMeal Partner</h6>
+            </div>
+
+            <div class="horizontal-navbar col-6 col-sm-7 col-md-7 col-lg-7 ">
+                <label>Your Diet Planner</label>
+            </div>
+            <div class="horizontal-navbar col-6 col-sm-3 col-md-3 col-lg-3">
+                <button id="extrabt" onClick="add()">Add Your Extra Meal
+                    <img src="../meal3/images/signin.png" width="19px" height="25px" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="vertical-navbar col-6 col-sm-2 col-md-2 col-lg-2 ">
+                <button id="homebt">Home</button>
+                <button class="bt1" id="menu1" onclick="about()">About Us</button>
+                <button class="bt1" id="menu2" onclick="category()">Category</button>
+                <button class="bt1" id="menu3" onclick="blogs()"  >Blogs</button>
+                <button class="bt1" id="menu4" onclick="profile()" >Profile</button>
+            </div>
+            <div class="nav2  col-6  col-sm-1 col-md-1 col-lg-1">
+                <button id="btt">Today</button>
+                <br>
+                <button id="bt3"  onclick="breakfast()">8.00am<br>
+                    Beakfast</button>
+                <br>
+                <button id="bt4" onclick="lunch()" >Lunch</button><br>
+                <button id="bt5" onclick="dinner()" >Dinner</button><br>
+                <button id="bt6" onclick="snacks()">Snacks</button>
+            </div>
+
+            <div class="nav2 col-6 col-sm-3 col-md-3 col-lg-3 ">
+                <button id="bt2">Diet chat Recommended</button>
+                <img id="simage1" src="../meal3/images/milk.webp" width="50px">
+                <img id="simage2" src="../meal3/images/apple.webp" width="50px">
+                <img id="simage3" src="../meal3/images/bread.webp" width="50px">
+                <div id="target">Today target:243calories</div>
+                <div id="target1">Your customise:367calories</div>
+            </div>
+        
+        
+
+            <div class=" col-6 col-sm-3 col-md-3 col-lg-3 nav3 align-items-center py-1">
+                <!-- Semi-circle container -->
+                <div class="text-center">
+                    <span class="fw-semibold text-success mt-2 ">🔥 Calories</span>
+                </div>
+                <div class="nav4 position-relative bg-light rounded-circle"
+                    style="width: 200px; height: 100px; overflow: hidden;">
+                    <!-- Gauge background -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100"
+                        style="background: conic-gradient(#2e7d32 0%, #2e7d32 50%, #e8e8e8 50%, #e8e8e8 100%); clip-path: circle(50% at 50% 100%);">
+                    </div>
+                    <!-- Needle -->
+                    <div id="bootstrap-needle" class="position-absolute bg-black"
+                        style="width: 5px; height: 100px; left: 50%; transform-origin: bottom; transform: rotate(36deg); transition: transform 0.5s ease-out;">
+                    </div>
+                </div>
+                <!-- Labels -->
+
+                <div class="text-center mt-3">
+                    <span>Today</span>
+                </div>
+            </div>
+            <div class="nav3 col-12 col-sm-3 col-md-3 col-lg-3 ">
+                <button id="extrabt2">Today Extra Meal</button>
+                <button id="extrabt3">Date</button>
+                <div class="row">
+                    <div class=" col-1 col-sm-3 col-md-3 col-lg-3">
+                        <div id="snack1">
+                            <p id="id1">Snacks:
+                                potato chips
+                                536 calories
+                            </p>
+                        </div>
+                    </div>
+                    <div class="snack  col-1 col-sm-3 col-md-3 col-lg-3">
+                        <div id="snack2">
+                            <p id="id1">Coffee:
+                                250 ml
+                                150 calories
+                            </p>
+                        </div>
+                    </div>
+                
+                <div class="row ">
+                    <div class=" col-3 col-sm-3 col-md-3 col-lg-3">
+                        <div id="snack1">
+                            <p id="id1">Samosa:
+                                40 grms
+                                174 calories
+                            </p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+  
+
+    <div class="container">
+        <div class="row">
+            <div class="vertical-navbar lastclass  col-12 col-sm-2 col-md-2 col-lg-2">
+              <p></p>
+            </div>
+            <div class="lastclass  col-12 col-sm-10 col-md-10 col-lg-10">
+              <h5>Healthy Benefits</h5>
+            </div>
+          </div>
+    </div>
+
+
+<div class=" container">
+    <div class="row">
+        <div class=" vertical-navbar  col-12 col-sm-2 col-md-2 col-lg-2">
+          <p></p>
+        </div>
+        <div class="hov col-12 col-sm-2 col-md-2 col-lg-2">
+          <img src="../meal3/images/food.jpg" width="150px" heigth="150px" style="border:none">
+          
+          <p class="text">Fresh salad bowl with veggies and chickpeas.
+          </p>
+
+        </div>
+        <div class="hov col-12 col-sm-2 col-md-2 col-lg-2">
+          <img src="food2.webp" width="150px" heigth="150px" style="border:none">
+        <p class="text">
+          A balanced mix of fruits, veggies, proteins, and healthy fats.  
+        </p>
+        </div>
+        <div class="hov col-12 col-sm-2 col-md-2 col-lg-2">
+          <img src="food3.jpg" width="150px" heigth="150px" style="border:none">
+          <p class="text">A colorful chickpea salad with fresh vegetables and spices.
+          </p>
+        </div>
+        <div class="hov col-12 col-sm-2 col-md-2 col-lg-2">
+          <img src="food4.jpg" width="150px" heigth="150px" style="border:none">
+          <p class="text">A Thali platter filled with delicious Nepalese dishes. </p>
+  
+        </div>
+        <div class="hov col-12 col-sm-2 col-md-2 col-lg-2">
+          <img src="food5.jpg" width="150px" heigth="150px" style="border:none">
+          <p class="text">A mortar and pestle with herbs, symbolizing Ayurveda.
+          </p>
+        </div>
+        
+        <div class="three-dots row  col-10 col-sm-10 col-md-10 col-lg-10">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+      
+      
+
+    <div class=" container">
+        <div class="row">
+            <div class="vertical-navbar col-12 col-sm-2 col-md-2 col-lg-2">
+            <img src="signin.png" width="40px">
+      <button id="signbt" onclick="signout()">SIGNOUT</button>
+            </div>
+            <div class="lastclass2 col-12 col-sm-10 col-md-10 col-lg-10">
+              <p>© 2025 FitMealpartner.in All rights reserved.
+              </p>
+            </div>
+          </div>
+    </div>
+    
+</div>
+<div class="container">
+    <div class="row">
+<div class='col-xs-12'id="popupbox">
+    <img id="fimage" src="../meal3/images/fimage.png" width="20px" class="ms-1">
+    <span>Add Your Extra Meal</span>
+   <form method='post' action='save_meal.php'>
+    <input class='pop2'type="date" id="mealDate" name="mealDate"></input>
+    <input class="pop2" type="text" placeholder=" Meal Name" name='mealName'id="mealName">
+    <input class="pop2" type="text" placeholder=" Taken Weight or grams, ml & etc" name="mealWeight"id="mealWeight">
+    <input class="pop2" type="text" placeholder=" Meal Type" name="mealType" id="mealType">
+    <button id="ltbt" onclick="cancel()">cancel</button>
+    <button id="ltbt1" name='reg_user' onclick='saveMeal()' >Save</button>
+</form>
+ 
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="popupbox2">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+
+        <button id="popupbox3" onclick="clos()">close</button>
+    </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="Script.js"></script>
+</html>

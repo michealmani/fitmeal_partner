@@ -1,0 +1,16 @@
+.three-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    gap: 8px; /* Space between dots */
+  }
+  
+  .three-dots span {
+    width: 1px;  /* Size of each dot */
+    height: 6px;
+    background-color: rgb(216, 213, 213); /* Dot color */
+    border-radius: 34%; /* Makes it a circle */
+    display: inline-block;
+  }
+  
