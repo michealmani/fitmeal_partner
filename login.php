@@ -42,7 +42,7 @@
 <div class="container">
 <div class="row ">
   <div class="col-lg-3">
-                <img src="fitmeal0.jpg" width='300px' height='300px'alt="Running Woman">
+                <img src='../meal3/images/fitmeal0.jpg' width='300px' height='300px'alt="Running Woman">
             </div>
             <div class="col-lg-6 form-container">
                     <h2 class="text-center mb-3"><b style="color: #008000;">FitMeal Partner</b></h2>

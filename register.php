@@ -58,7 +58,7 @@
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-3 col-lg-4 img-container1">
-                <img src="fitmeal.jpg" alt="Left Image" >
+                <img src="../meal3/images/fitmeal.jpg" alt="Left Image" >
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="form-container">
@@ -93,7 +93,7 @@
   </div>
             </div>
             <div class="col-md-3 col-lg-4 img-container2">
-                <img src="fitmeal3.jpg" alt="Right Image">
+                <img src="../meal3/images/fitmeal3.jpg" alt="Right Image">
             </div>
         </div>
     </div>

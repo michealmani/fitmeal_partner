@@ -11,9 +11,9 @@ function breakfast(){
     document.getElementById('bt4').style.backgroundColor='white';
     document.getElementById('bt5').style.backgroundColor='white';
     document.getElementById('bt6').style.backgroundColor='white';
-    document.getElementById('simage1').src='milk.webp';
-    document.getElementById('simage2').src='apple.webp';
-    document.getElementById('simage3').src='bread.webp';  
+    document.getElementById('simage1').src="../meal3/images/milk.webp";
+    document.getElementById('simage2').src='../meal3/images/apple.webp';
+    document.getElementById('simage3').src='../meal3/images/bread.webp';  
    document.getElementById('target').textContent='Today target: 243 calories';    
    document.getElementById('target1').textContent='Your customise: 367 calories';    
 }
@@ -22,9 +22,9 @@ function lunch() {
   document.getElementById('bt3').style.backgroundColor='white';
   document.getElementById('bt5').style.backgroundColor='white';
   document.getElementById('bt6').style.backgroundColor='white';
-    document.getElementById('simage1').src='dal.jpg';
-  document.getElementById('simage2').src='rice.jpg';
-  document.getElementById('simage3').src='panneer.jpg';  
+    document.getElementById('simage1').src='../meal3/images/dal.jpg';
+  document.getElementById('simage2').src='../meal3/images/rice.jpg';
+  document.getElementById('simage3').src='../meal3/images/panneer.jpg';  
  document.getElementById('target').textContent='Today target: 133 calories';    
  document.getElementById('target1').textContent='Your customise: 361 calories'; 
 }
@@ -33,9 +33,9 @@ function dinner(){
     document.getElementById('bt3').style.backgroundColor='white';
     document.getElementById('bt4').style.backgroundColor='white';
     document.getElementById('bt6').style.backgroundColor='white';
-    document.getElementById('simage1').src='idli.jpg';
-    document.getElementById('simage2').src='sambar.jpg';
-    document.getElementById('simage3').src='milk2.jpg';  
+    document.getElementById('simage1').src='../meal3/images/idli.jpg';
+    document.getElementById('simage2').src='../meal3/images/sambar.jpg';
+    document.getElementById('simage3').src='../meal3/images/milk2.jpg';  
    document.getElementById('target').textContent='Today target: 243 calories';    
    document.getElementById('target1').textContent='Your customise: 367 calories';   
 }
